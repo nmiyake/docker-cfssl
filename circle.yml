@@ -9,3 +9,11 @@ test:
   override:
     - docker build -t nmiyake/cfssl -f cfssl/Dockerfile .
     - docker run -it nmiyake/cfssl ls
+
+deployment:
+  publish:
+    branch: develop
+    owner: nmiyake
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push nmiyake/cfssl
