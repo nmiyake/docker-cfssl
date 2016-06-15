@@ -9,6 +9,7 @@ additions:
   * netcat
   * openssl
   * rubygems
-  * [dumb-init](https://github.com/Yelp/dumb-init)
-  * [jq](https://github.com/stedolan/jq)
-  * [cfssl](https://github.com/cloudflare/cfssl)
+  * [dumb-init](https://github.com/Yelp/dumb-init) 1.0.1
+  * [jq](https://github.com/stedolan/jq) 1.5
+  * [cfssl](https://github.com/cloudflare/cfssl) R1.2
+  * [etcd](https://github.com/coreos/etcd) 2.3.5

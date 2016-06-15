@@ -25,3 +25,9 @@ RUN wget -O /usr/local/bin/cfssl https://pkg.cfssl.org/R1.2/cfssl_linux-amd64
 RUN chmod +x /usr/local/bin/cfssl
 RUN wget -O /usr/local/bin/cfssljson https://pkg.cfssl.org/R1.2/cfssljson_linux-amd64
 RUN chmod +x /usr/local/bin/cfssljson
+
+# install etcd
+RUN curl -L https://github.com/coreos/etcd/releases/download/v2.3.5/etcd-v2.3.5-linux-amd64.tar.gz -o etcd-v2.3.5-linux-amd64.tar.gz
+RUN tar xzvf etcd-v2.3.5-linux-amd64.tar.gz
+RUN rm etcd-v2.3.5-linux-amd64.tar.gz
+RUN mv etcd-v2.3.5-linux-amd64 etcd
